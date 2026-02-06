@@ -83,11 +83,17 @@
 
     <joint name="camera_pan_joint" type="continuous"><parent link="camera_stand"/><child link="camera_pan_link"/><origin xyz="0 0 0.03"/><axis xyz="0 0 1"/></joint>
     <link name="camera_pan_link">
-        <visual>
-            <origin xyz="0 0 0.04"/> <geometry><cylinder radius="0.015" length="0.08"/></geometry>
-            <material name="grey"/>
-        </visual>
-    </link>
+            <visual>
+                <origin xyz="0 0 0.04"/> <geometry><cylinder radius="0.015" length="0.08"/></geometry>
+                <material name="grey"/>
+            </visual>
+            <collision>
+                <origin xyz="0 0 0.04"/> <geometry><cylinder radius="0.015" length="0.08"/></geometry>
+            </collision>
+            <xacro:inertial_cylinder mass="0.05" length="0.08" radius="0.015">
+                <origin xyz="0 0 0.04"/>
+            </xacro:inertial_cylinder>
+        </link>
 
     <joint name="camera_tilt_joint" type="revolute">
         <parent link="camera_pan_link"/>
