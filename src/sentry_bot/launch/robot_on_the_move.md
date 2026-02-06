@@ -114,4 +114,13 @@ ros2 control list_controllers
 
 ```
 
+Quick Checklist for your first "One-Click" run:
+
+Terminal 1: Run chittistart (or click the icon).
+
+Terminal 2: Run the Unpause service command.
+
+Terminal 3: Run Teleop to drive.
+
+Terminal 4: Run RViz (it will now remember your settings if you saved the .rviz file).
 ---
