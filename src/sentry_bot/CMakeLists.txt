@@ -29,8 +29,10 @@ install(DIRECTORY launch
 )
 
 # Install the description directory (URDF/Xacro)
-install(DIRECTORY description
+
+install(DIRECTORY
+  description
+  launch
   DESTINATION share/${PROJECT_NAME}
 )
-
 ament_package()

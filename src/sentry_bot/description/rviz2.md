@@ -75,7 +75,4 @@ Each time you open RViz, verify these settings to ensure you can see your multi-
 Here are the reference materials:
 
 * **Creating a rough 3D model of our robot with URDF**: https://www.youtube.com/watch?v=BcjHyhV0kIs.
-* **Background Color**: Change from dark gray to **Light Gray** so the **black chassis** is visible.
-* **RobotModel**:
-* **Description Topic**: Ensure it is `/robot_description`.
-* **Durability Policy**: Set to `Transient Local`.
+* **Drive your Robot using Gazebo**: https://www.youtube.com/watch?v=IjFcr5r0nMs
