@@ -33,6 +33,8 @@ install(DIRECTORY launch
 install(DIRECTORY
   description
   launch
+  config
+  worlds
   DESTINATION share/${PROJECT_NAME}
 )
 ament_package()
